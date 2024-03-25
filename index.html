@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión Exámen</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>SISTEMA GESTION DE EXAMENES</h1>
-<section>
-    <h3>Ingresa tu dni</h3>
-    <form action="" method="post">
-        <div>
-                <label for="dni">DNI:</label>
-                <input type="number" id="dni" name="user_dni" />
-        </div>
-        <div>
-                <input type="button" value="Click me" />
-        </div>
+<div class="container-index">
+    <h1>Validación de DNI</h1>
+    <form id="dniForm">
+        <label for="dni">Número de DNI:</label>
+        <input type="text" id="dni" name="dni" required>
+        <button type="submit">Validar</button>
     </form>
-</section>
+    <div id="resultado"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
