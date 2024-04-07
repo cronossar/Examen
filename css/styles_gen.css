@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    --gold1:#f4bd76;
+    --gold2:#f6cd8f;
+    --gray1:#ffffff80;
+    --gray2:#f7d9d980;
+    --black1:#1a1b1f;
+    --black2:#30353b;
+    --shadow:0 8px 8px;
+    --color-shadow:#00000033;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* .container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 100px 0;
+    height: auto;
+} */
+
+.hero{
+    width: 100%;
+    min-height: 10vh;
+    background: linear-gradient(180deg, #30353b, #1a1b1f 100%);
+}
+
+.nav-hero{
+    color: #fff;
+    height: 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    padding: 0;
+}
+
+.loguito{
+    max-width: 15%;
+}
+
+.logo-name{
+    font-size: 24px;
+}
+
+.link{
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.link-active{
+    color: var(--gold1);
+    font-weight: 700;
+}
+
+.point{
+    color: var(--gold1);
+}
+
+.hero-main{
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.mockup{
+    object-fit: cover;
+    width: 48%;
+    max-height: 90vh;
+}
+
+.hero-textos{
+    width: 48%;
+}
+.titulo{
+    font-size: 80px;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: var(--shadow) var(--color-shadow);
+}
+
+.letra1{
+    color: var(--gold1);
+    font-weight: 700;
+}
+
+.copy{
+    font-size: 20px;
+    color: var(--gold2);
+    text-shadow: var(--shadow) var(--color-shadow);
+    margin: 15px 0;
+}
+
+.copy-active{
+    font-weight: 700;
+}
+
+
+/* CONTENEDOR */
+
+.admin-container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 100px 0;
+    height: auto;
+}
+.subtitle{
+    font-size: 60px;
+}
+
+.container-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cards{
+    width: 30%;
+    padding: 30px 0;
+    overflow: hidden;
+    background: #f7ce90;
+    border-radius: 10px;
+    position: relative;
+    text-align: left;
+    margin-bottom: 60px;
+    box-shadow: 0 0 6px var(--color-shadow);
+}
+
+.card-button{
+    display: block;
+    background: linear-gradient(180deg, #f7ce90 0%, #f4bd76 100%);
+    border-radius: 6px;
+    text-decoration: none;
+    width: 40%;
+    color: var(--black1);
+    font-weight: 700;
+    margin: auto;
+    align-items: center;
+}
+
+/* BUSCAR ALUMNO PARA CARGA ASIGNATURAS */
+
+.container-busca-alumno {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#result {
+    font-size: 18px;
+}
